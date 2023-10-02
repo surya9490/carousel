@@ -1,0 +1,67 @@
+body {
+  margin:0;
+  box-sizing: border-box;
+  
+}
+.page-width {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  
+}
+.carousel-items {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 10;
+}
+[data-carousel] > * {
+  width: 100%;
+  scroll-snap-align: center;
+  min-width: 100%;
+  aspect-ratio: 2 / 1;
+}
+li {
+  margin-left: auto;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+[data-carousel]  ~ button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 100;
+}
+
+.prev-button {
+  left: 0px;
+}
+
+.next-button {
+  right: 0px;
+}
+
+.carousel-dots {
+  height: 5px;
+  width: 5px;
+  clip-path: circle(50%);
+  background-color: white;
+}
+
+
