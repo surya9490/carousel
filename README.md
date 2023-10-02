@@ -7,7 +7,6 @@ A simple and customizable carousel component with options for looping and draggi
 - [Demo](#demo)
 - [Features](#features)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
 - [Options](#options)
 - [License](#license)
 
@@ -50,29 +49,6 @@ initializeCarousel({
 
 3.Customize the carousel by modifying the CSS and JavaScript as needed.
 
-
-
-## Usage
-To use the carousel in your HTML, you need to structure your document as follows:
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Add your meta tags, title, and stylesheet link here -->
-  </head>
-  <body>
-    <div class="carousel-container">
-      <div data-carousel class="carousel-items">
-        <div class="slider carousel-elements">1</div>
-        <div class="slider carousel-elements">2</div>
-        <!-- Add more carousel items as needed -->
-      </div>
-      <button class="prev-button">Previous</button>
-      <button class="next-button">Next</button>
-    </div>
-    <script src="carousel.js"></script>
-  </body>
-</html>
 
 
 
